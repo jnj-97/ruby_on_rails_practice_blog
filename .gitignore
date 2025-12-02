@@ -1,56 +1,69 @@
-*.gem
-*.rbc
-/.config
-/coverage/
-/InstalledFiles
-/pkg/
-/spec/reports/
-/spec/examples.txt
-/test/tmp/
-/test/version_tmp/
-/tmp/
-
-# Used by dotenv library to load environment variables.
-# .env
-
-# Ignore Byebug command history file.
-.byebug_history
-
-## Specific to RubyMotion:
-.dat*
-.repl_history
-build/
-*.bridgesupport
-build-iPhoneOS/
-build-iPhoneSimulator/
-
-## Specific to RubyMotion (use of CocoaPods):
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# vendor/Pods/
-
-## Documentation cache and generated files:
-/.yardoc/
-/_yardoc/
-/doc/
-/rdoc/
-
-## Environment normalization:
-/.bundle/
+# Bundler
+/.bundle
 /vendor/bundle
-/lib/bundler/man/
 
-# for a library or gem, you might want to ignore these files since the code is
-# intended to run in multiple environments; otherwise, check them in:
-# Gemfile.lock
-# .ruby-version
-# .ruby-gemset
+# Logs
+/log/*.log
+/log/*.pid
+/log/*.pid.lock
 
-# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-.rvmrc
+# Temporary files
+/tmp
+/tmp/*
+!/tmp/.keep
 
-# Used by RuboCop. Remote config files pulled in from inherit_from directive.
-# .rubocop-https?--*
+# Storage (ActiveStorage, variants, etc.)
+/storage/*/*
+!/storage/.keep
+
+# Public uploads
+/public/uploads
+/public/assets
+/public/packs
+/public/packs-test
+
+# Rails tests
+/coverage/
+spec/examples.txt
+
+# Cache
+/cache
+/byebug_history
+
+# Credentials (Rails 5.2+)
+/config/master.key
+/config/credentials.yml.enc
+
+# Database
+*.sqlite3
+*.sqlite3-journal
+
+# Environment files
+.env
+.env.*
+
+# Node / Yarn
+/node_modules
+/yarn-error.log
+
+# Editor files
+/.vscode
+/.idea
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Rails compiled assets
+/public/assets
+/public/packs
+/public/packs-test
+/node_modules
+
+# Sprockets cache
+/tmp/cache/assets/sprockets/
+
+# Ignore local scripts, secrets, etc.
+*.swp
+*.bak
+*.tmp
